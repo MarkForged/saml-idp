@@ -17,9 +17,9 @@ const chalk               = require('chalk'),
       session             = require('express-session'),
       yargs               = require('yargs/yargs'),
       xmlFormat           = require('xml-formatter'),
-      samlp               = require('@markforged/samlp'),
-      Parser              = require('xmldom').DOMParser,
-      SessionParticipants = require('@markforged/samlp/lib/sessionParticipants'),
+      samlp               = require('samlp'),
+      Parser              = require('@xmldom/xmldom').DOMParser,
+      SessionParticipants = require('samlp/lib/sessionParticipants'),
       SimpleProfileMapper = require('./lib/simpleProfileMapper.js');
 
 /**
@@ -817,6 +817,7 @@ function _runServer(argv) {
         {cyan ${baseUrl}}
     `));
   });
+  return httpServer;
 }
 
 function runServer(options) {
