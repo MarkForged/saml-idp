@@ -17,9 +17,9 @@ const chalk               = require('chalk'),
       session             = require('express-session'),
       yargs               = require('yargs/yargs'),
       xmlFormat           = require('xml-formatter'),
-      samlp               = require('samlp'),
+      samlp               = require('@markforged/samlp'),
       Parser              = require('xmldom').DOMParser,
-      SessionParticipants = require('samlp/lib/sessionParticipants'),
+      SessionParticipants = require('@markforged/samlp/lib/sessionParticipants'),
       SimpleProfileMapper = require('./lib/simpleProfileMapper.js');
 
 /**
