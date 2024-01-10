@@ -26,6 +26,7 @@
     "node": ">=6.0.0"
   },
   "dependencies": {
+    "@markforged/samlp": "github:MarkForged/node-samlp",
     "body-parser": "~1.19.0",
     "chalk": "^4.0.0",
     "debug": "~4.1.1",
@@ -34,7 +35,6 @@
     "extend": "^3.0.2",
     "hbs": "^4.1.1",
     "morgan": "^1.10.0",
-    "samlp": "git+ssh://github.com/MarkForged/node-samlp.git",
     "xml-formatter": "^2.1.0",
     "xmldom": "^0.3.0",
     "yargs": "^15.3.1"
