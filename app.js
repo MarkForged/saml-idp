@@ -531,7 +531,11 @@ function _runServer(argv) {
     resave: false,
     saveUninitialized: true,
     name: 'idp_sid',
-    cookie: { maxAge: 60 * 60 * 1000 }
+    cookie: {
+      maxAge: 60 * 60 * 1000,
+      // sameSite: 'none',
+      secure: true
+    }
   }));
 
   /**
